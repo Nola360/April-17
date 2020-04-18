@@ -47,15 +47,28 @@ section {
 }
 
 span {
-  padding: 5px 7.5px;
-  background-color: #fff;
+  /* padding: 10px; */
+  height: 30px;
+  width: 30px;
+  background-color: rgb(252, 0, 0);
 }
+
+.fas.fa-check {
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+
+
 
 .input_box {  
   width: 100%;
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
 }
 .list_container {
   display: flex;
@@ -80,7 +93,36 @@ span {
  font-size: 30px;
 }
 
-i {
-  padding: 30px;
+.fas.fa-trash {
+  padding: 20px;
   font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
+
+.add_button {
+  padding: 20px;
+  background: teal;
+  margin-top: 20px;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.delete_button {
+  padding: 20px;
+  background: teal;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
