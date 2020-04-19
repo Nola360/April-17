@@ -5,8 +5,7 @@ const trash = document.querySelectorAll('.fas.fa-trash');
 const list = document.querySelector('ul');
 const checkmark = document.querySelectorAll('.checkbox i')
 const checkbox = document.querySelectorAll('.checkbox')
-
-
+const select_all = document.querySelector('#select_all');
 
 console.log(checkbox);
 console.log(checkmark);
@@ -52,37 +51,28 @@ add_button.addEventListener('click', function () {
 
   input_box.value = '';
 
-  // Console
-  // console.log(item.firstElementChild.firstElementChild.nextSibling);
 })
 
 
+// Select All Checkbox
+for (let i = 0; i < checkbox.length; i++) {
+  checkbox[0].parentElement.addEventListener('click', function () {
+    // Select All Check Box
+    checkbox[0].firstElementChild.classList.toggle('active');
+    // List Item Check Box
+    checkbox[i].firstElementChild.classList.toggle('active');
+    console.log(checkbox[0]);
+  })
 
+}
 
-
-
+// Individual Checkmark 
 for (let i = 0; i < checkmark.length; i++) {
   checkmark[i].parentElement.addEventListener('click', function () {
     checkmark[i].classList.toggle('active');
     console.log(checkmark[1]);
   })
 }
-
-
-// // Checkmark 
-// checkbox.forEach(box => {
-//   box.addEventListener('click', function () {
-//     checkmark.forEach(mark => {
-//       mark.classList.toggle('active');
-//       console.log(mark);
-//     })
-//   })
-// })
-
-
-
-
-
 
 // Clear list
 delete_button.addEventListener('click', function () {
