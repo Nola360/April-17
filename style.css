@@ -30,17 +30,17 @@ header {
   padding: 20px 20px;
 }
 
-.select_all {
+.select_all_box {
   display: flex;
   align-items: center;
 }
 
-.select_all p {
+.select_all_box p {
   font-size: 20px;
   margin: 10px;
 }
 
-.select_all .checkbox_box {
+.select_all_box .checkbox_box {
   font-size: 90px;
   /* padding: 60px; */
 }
@@ -65,13 +65,11 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: royalblue;
   display: none;
 }
 
 .fas.fa-check.active {
   display: flex;
-  /* background: green; */
   color:royalblue;
   font-size: 20px;
   padding: 6px;
@@ -100,12 +98,9 @@ span {
 }
 
 .icon_box {
-  color: green;
-  /* background: lime; */
+  color: rgb(236, 236, 236);
   font-size: 25px;
   padding: 5px;
-  
-  
 }
 
 .item_list_container {
@@ -118,7 +113,7 @@ span {
 }
 
  a {
- margin-left: 5px;
+ margin-left: 10px;
  font-size: 30px;
 }
 
