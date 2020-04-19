@@ -6,6 +6,9 @@ const list = document.querySelector('ul');
 const checkmark = document.querySelectorAll('.checkbox i')
 const checkbox = document.querySelectorAll('.checkbox')
 
+
+
+console.log(checkbox);
 console.log(checkmark);
 console.log(trash[0]);
 
@@ -59,19 +62,22 @@ add_button.addEventListener('click', function () {
 
 
 for (let i = 0; i < checkmark.length; i++) {
-  checkmark
+  checkmark[i].parentElement.addEventListener('click', function () {
+    checkmark[i].classList.toggle('active');
+    console.log(checkmark[1]);
+  })
 }
 
 
-// Checkmark 
-checkbox.forEach(box => {
-  box.addEventListener('click', function () {
-    checkmark.forEach(mark => {
-      mark.classList.toggle('active');
-      console.log(mark);
-    })
-  })
-})
+// // Checkmark 
+// checkbox.forEach(box => {
+//   box.addEventListener('click', function () {
+//     checkmark.forEach(mark => {
+//       mark.classList.toggle('active');
+//       console.log(mark);
+//     })
+//   })
+// })
 
 
 
