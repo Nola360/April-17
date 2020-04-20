@@ -23,11 +23,12 @@ body {
 
 header {
   display: flex;
-  background: teal;
+  background: #4ea1d3;
   color: #fff;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
+  border-radius: 10px 10px 0 0;
 }
 
 .select_all_box {
@@ -51,14 +52,17 @@ header {
 }
 
 section {
-  background: yellow;
+  background: #f9f7f1;
   padding: 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 span {
   height: 30px;
   width: 30px;
   background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .fas.fa-check {
@@ -70,9 +74,18 @@ span {
 
 .fas.fa-check.active {
   display: flex;
-  color:royalblue;
+  color:#4ea1d3;
   font-size: 20px;
   padding: 6px;
+}
+
+.fas.fa-trash {
+  transition: font-size .1s ease-in-out;
+}
+
+.fas.fa-trash:hover {
+  font-size: 28px;
+  transform: rotate(360deg);
 }
 
 .input_box {  
@@ -83,43 +96,46 @@ span {
   border-radius: 3px;
   outline: none;
   border: none;
+  border-radius: 3px;
 }
 
 .list_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid hotpink;
+  border: 3px solid #4ea1d3;
   margin-bottom: 10px;
   padding: 10px;
-  background: orange;
-  /* min-width: 800px; */
+  border-radius: 10px;
   
 }
 
 .icon_box {
-  color: rgb(236, 236, 236);
+  color: rgb(161, 161, 161);
   font-size: 25px;
   padding: 5px;
+  cursor: pointer;
 }
+
+
+
+
 
 .item_list_container {
   display: flex;
   align-items: center;
   max-height: 100px;
-  /* background-color: red; */
-  /* width: 100%; */
-  /* padding: 10px; */
 }
 
  a {
  margin-left: 10px;
  font-size: 30px;
+ color: black;
 }
 
-.add_button {
+.button {
   padding: 20px;
-  background: teal;
+  background: #4ea1d3;
   margin-top: 20px;
   border-radius: 3px;
   text-align: center;
@@ -130,16 +146,7 @@ span {
   cursor: pointer;
 }
 
-.delete_button {
-  padding: 20px;
-  background: teal;
-  margin-top: 10px;
-  border-radius: 3px;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
+.button:hover {
+  background: rgba(71, 153, 207, 0.8);
 }
 
