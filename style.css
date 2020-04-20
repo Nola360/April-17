@@ -16,9 +16,11 @@ body {
   height: 100vh;
 }
 
-
 .container {
-  /* min-width: 400px; */
+  min-width: 600px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  
 }
 
 header {
@@ -43,13 +45,8 @@ header {
 
 .select_all_box .checkbox_box {
   font-size: 90px;
-  /* padding: 60px; */
 }
 
-.container {
-  min-width: 600px;
-  
-}
 
 section {
   background: #f9f7f1;
@@ -80,11 +77,12 @@ span {
 }
 
 .fas.fa-trash {
-  transition: font-size .1s ease-in-out;
+  transition: font-size, color .2s ease-in-out;
 }
 
 .fas.fa-trash:hover {
   font-size: 28px;
+  color: rgb(240, 81, 81);
   transform: rotate(360deg);
 }
 
@@ -117,10 +115,6 @@ span {
   cursor: pointer;
 }
 
-
-
-
-
 .item_list_container {
   display: flex;
   align-items: center;
@@ -131,6 +125,11 @@ span {
  margin-left: 10px;
  font-size: 30px;
  color: black;
+}
+
+a.active {
+  text-decoration: line-through;
+  color: grey;
 }
 
 .button {
@@ -147,6 +146,6 @@ span {
 }
 
 .button:hover {
-  background: rgba(71, 153, 207, 0.8);
+  background: rgba(71, 153, 207, 0.85);
 }
 
