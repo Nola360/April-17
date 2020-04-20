@@ -1,3 +1,4 @@
+// Variable 
 const input_box = document.querySelector('.input_box');
 const add_button = document.querySelector('.add_button');
 const delete_button = document.querySelector('.delete_button');
@@ -48,7 +49,6 @@ add_button.addEventListener('click', function () {
 
   // Append li to ul
   list.appendChild(item);
-
   input_box.value = '';
 
 })
@@ -63,14 +63,12 @@ for (let i = 0; i < checkbox.length; i++) {
     checkbox[i].firstElementChild.classList.toggle('active');
     console.log(checkbox[0]);
   })
-
 }
 
 // Individual Checkmark 
 for (let i = 0; i < checkmark.length; i++) {
   checkmark[i].parentElement.addEventListener('click', function () {
     checkmark[i].classList.toggle('active');
-    console.log(checkmark[1]);
   })
 }
 
@@ -79,13 +77,9 @@ delete_button.addEventListener('click', function () {
 
 })
 
-
-
+// Removes individual list item
 for (let i = 0; i < trash.length; i++) {
   trash[i].addEventListener('click', () => {
     trash[i].parentElement.parentElement.remove();
   })
-
-
 }
-console.log(delete_button);
