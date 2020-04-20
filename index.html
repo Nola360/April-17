@@ -5,16 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Do List</title>
+  <!-- Font Awesome Icon Script -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- To Do List Container -->
   <div class="container">
+    <!-- Header Start-->
     <header>
       <h1>To Do List</h1>
       <div class="action_box">
+        <!-- Check Box Container -->
         <div class="checkbox_box">
           <div class="select_all_box">
             <p>Select All:</p>
@@ -23,14 +28,19 @@
             </span>
           </div>
         </div>
+        <!-- Check Box Container End -->
       </div>
     </header>
+    <!-- Header End -->
+    <!-- Section  Start -->
     <section>
       <div class="input_container">
         <input class='input_box' type="text" placeholder='Enter text here...'>
       </div>
 
+      <!-- List Container -->
       <ul>
+        <!-- List Item Start -->
         <li class='list_container'>
           <div class="item_list_container">
 
@@ -45,9 +55,10 @@
           <div class="icon_box">
             <i class="fas fa-trash"></i>
           </div>
-
         </li>
+        <!-- List Item End -->
 
+        <!-- List Item Start -->
         <li class='list_container'>
           <div class="item_list_container">
 
@@ -62,18 +73,21 @@
           <div class="icon_box">
             <i class="fas fa-trash"></i>
           </div>
-
         </li>
+        <!-- List Item End -->
       </ul>
+      <!-- List Container End -->
 
+      <!-- Buttons -->
       <div class="button add_button">Add</div>
       <div class="button delete_button">Clear List</div>
     </section>
+    <!-- Section End -->
 
   </div>
 
 </body>
-
+<!-- External JS -->
 <script src='app.js'></script>
 
 </html>
