@@ -7,6 +7,7 @@ const list = document.querySelector('ul');
 const checkmark = document.querySelectorAll('.checkbox i')
 const checkbox = document.querySelectorAll('.checkbox')
 const select_all = document.querySelector('#select_all');
+const line_through = document.querySelectorAll('a');
 
 console.log(checkbox);
 console.log(checkmark);
@@ -43,6 +44,7 @@ add_button.addEventListener('click', function () {
   // Create text Node for a link
   link.textContent = input_box.value
 
+  // Prevents empty input value
   if (item.firstElementChild.firstElementChild.nextSibling.textContent === '') {
     return false;
   }
@@ -65,6 +67,17 @@ for (let i = 0; i < checkbox.length; i++) {
   })
 }
 
+// // Hide All Checked Items
+// for (let i = 0; i < checkbox.length; i++) {
+//   checkbox[0].parentElement.addEventListener('click', function () {
+//     // Select All Check Box
+//     checkbox[0].firstElementChild.classList.toggle('active');
+//     // List Item Check Box
+//     checkbox[i].firstElementChild.classList.toggle('active');
+//     console.log(checkbox[0]);
+//   })
+// }
+
 // Individual Checkmark 
 for (let i = 0; i < checkmark.length; i++) {
   checkmark[i].parentElement.addEventListener('click', function () {
@@ -77,9 +90,18 @@ delete_button.addEventListener('click', function () {
 
 })
 
-// Removes individual list item
+// Removes individual item item from list
 for (let i = 0; i < trash.length; i++) {
   trash[i].addEventListener('click', () => {
     trash[i].parentElement.parentElement.remove();
   })
 }
+
+// Line Through Function
+line_through.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  })
+})
+
+
